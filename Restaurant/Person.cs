@@ -11,7 +11,15 @@ namespace Restaurant
         private string name;
         Meal meal;
        
+        public Person(string name)
+        {
+            this.name = name;
+        }
         
+        public Person()
+        {
+
+        }
 
         public void Setname (string name)
         {
@@ -24,14 +32,30 @@ namespace Restaurant
                 return name;
          }
 
-        public void setMeal()
+        public void setMeal(Meal mealOrder)
         {
-            meal = new Meal();
+            meal = mealOrder;
         }
 
         public Meal GetMeal()
         {
             return meal;
         }
+
+        public string GetMealNameInfo()
+        {
+            return $"{meal.getName()   }";
+        }
+
+        public string getMealPriceInfo()
+        {
+            return $"Euro {meal.getPrice()}";
+        }
+
+        public double getMealPrice()
+        {
+            return meal.getPrice();
+        } 
+
     }
 }

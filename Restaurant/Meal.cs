@@ -27,10 +27,14 @@ namespace Restaurant
             return $"{name}: Euro {price}";
         }
 
-        public void setMeal(string name, double price)
+        public string getName()
         {
-            this.name = name;
-            this.price = price;
+            return name;
+        }
+
+        public double getPrice()
+        {
+            return price;
         }
     }
 }
