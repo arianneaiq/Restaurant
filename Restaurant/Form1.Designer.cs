@@ -35,6 +35,7 @@ namespace Restaurant
             this.rbPerson2 = new System.Windows.Forms.RadioButton();
             this.rbPerson1 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnShowMealInfo = new System.Windows.Forms.Button();
             this.rbMeal5 = new System.Windows.Forms.RadioButton();
             this.rbMeal4 = new System.Windows.Forms.RadioButton();
             this.rbMeal3 = new System.Windows.Forms.RadioButton();
@@ -43,6 +44,7 @@ namespace Restaurant
             this.label1 = new System.Windows.Forms.Label();
             this.btnPlaceOrder = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.lbTotalPrice = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.lbOrderPrice4 = new System.Windows.Forms.Label();
@@ -54,8 +56,9 @@ namespace Restaurant
             this.lbClientOrder4 = new System.Windows.Forms.Label();
             this.lbClientOrder1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnAddName = new System.Windows.Forms.Button();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -68,9 +71,9 @@ namespace Restaurant
             this.groupBox1.Controls.Add(this.rbPerson3);
             this.groupBox1.Controls.Add(this.rbPerson2);
             this.groupBox1.Controls.Add(this.rbPerson1);
-            this.groupBox1.Location = new System.Drawing.Point(68, 161);
+            this.groupBox1.Location = new System.Drawing.Point(64, 234);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(271, 320);
+            this.groupBox1.Size = new System.Drawing.Size(189, 332);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Person Information";
@@ -80,11 +83,12 @@ namespace Restaurant
             this.rbPerson4.AutoSize = true;
             this.rbPerson4.Location = new System.Drawing.Point(18, 194);
             this.rbPerson4.Name = "rbPerson4";
-            this.rbPerson4.Size = new System.Drawing.Size(58, 24);
+            this.rbPerson4.Size = new System.Drawing.Size(67, 24);
             this.rbPerson4.TabIndex = 3;
             this.rbPerson4.TabStop = true;
-            this.rbPerson4.Text = "Jim";
+            this.rbPerson4.Text = "Sam";
             this.rbPerson4.UseVisualStyleBackColor = true;
+            this.rbPerson4.CheckedChanged += new System.EventHandler(this.rbPerson4_CheckedChanged);
             // 
             // rbPerson3
             // 
@@ -96,6 +100,7 @@ namespace Restaurant
             this.rbPerson3.TabStop = true;
             this.rbPerson3.Text = "Lars";
             this.rbPerson3.UseVisualStyleBackColor = true;
+            this.rbPerson3.CheckedChanged += new System.EventHandler(this.rbPerson3_CheckedChanged);
             // 
             // rbPerson2
             // 
@@ -107,93 +112,112 @@ namespace Restaurant
             this.rbPerson2.TabStop = true;
             this.rbPerson2.Text = "Myron";
             this.rbPerson2.UseVisualStyleBackColor = true;
+            this.rbPerson2.CheckedChanged += new System.EventHandler(this.rbPerson2_CheckedChanged);
             // 
             // rbPerson1
             // 
             this.rbPerson1.AutoSize = true;
             this.rbPerson1.Location = new System.Drawing.Point(18, 51);
             this.rbPerson1.Name = "rbPerson1";
-            this.rbPerson1.Size = new System.Drawing.Size(71, 24);
+            this.rbPerson1.Size = new System.Drawing.Size(58, 24);
             this.rbPerson1.TabIndex = 0;
             this.rbPerson1.TabStop = true;
-            this.rbPerson1.Text = "Sam ";
+            this.rbPerson1.Text = "Jim";
             this.rbPerson1.UseVisualStyleBackColor = true;
+            this.rbPerson1.CheckedChanged += new System.EventHandler(this.rbPerson1_CheckedChanged);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.groupBox2.Controls.Add(this.btnShowMealInfo);
             this.groupBox2.Controls.Add(this.rbMeal5);
             this.groupBox2.Controls.Add(this.rbMeal4);
             this.groupBox2.Controls.Add(this.rbMeal3);
             this.groupBox2.Controls.Add(this.rbMeal2);
             this.groupBox2.Controls.Add(this.rbMeal1);
-            this.groupBox2.Location = new System.Drawing.Point(370, 161);
+            this.groupBox2.Location = new System.Drawing.Point(269, 234);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(378, 320);
+            this.groupBox2.Size = new System.Drawing.Size(475, 332);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Meal Information";
             // 
+            // btnShowMealInfo
+            // 
+            this.btnShowMealInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnShowMealInfo.Location = new System.Drawing.Point(18, 38);
+            this.btnShowMealInfo.Name = "btnShowMealInfo";
+            this.btnShowMealInfo.Size = new System.Drawing.Size(174, 29);
+            this.btnShowMealInfo.TabIndex = 9;
+            this.btnShowMealInfo.Text = "Show Meal Info";
+            this.btnShowMealInfo.UseVisualStyleBackColor = false;
+            this.btnShowMealInfo.Click += new System.EventHandler(this.btnShowMealInfo_Click);
+            // 
             // rbMeal5
             // 
             this.rbMeal5.AutoSize = true;
-            this.rbMeal5.Location = new System.Drawing.Point(20, 242);
+            this.rbMeal5.Location = new System.Drawing.Point(18, 282);
             this.rbMeal5.Name = "rbMeal5";
-            this.rbMeal5.Size = new System.Drawing.Size(232, 24);
+            this.rbMeal5.Size = new System.Drawing.Size(74, 24);
             this.rbMeal5.TabIndex = 8;
             this.rbMeal5.TabStop = true;
-            this.rbMeal5.Text = "Avocado Chocolate Mousse";
+            this.rbMeal5.Text = "..........";
             this.rbMeal5.UseVisualStyleBackColor = true;
+            this.rbMeal5.CheckedChanged += new System.EventHandler(this.rbMeal5_CheckedChanged);
             // 
             // rbMeal4
             // 
             this.rbMeal4.AutoSize = true;
-            this.rbMeal4.Location = new System.Drawing.Point(20, 194);
+            this.rbMeal4.Location = new System.Drawing.Point(18, 234);
             this.rbMeal4.Name = "rbMeal4";
-            this.rbMeal4.Size = new System.Drawing.Size(135, 24);
+            this.rbMeal4.Size = new System.Drawing.Size(74, 24);
             this.rbMeal4.TabIndex = 7;
             this.rbMeal4.TabStop = true;
-            this.rbMeal4.Text = "Spring Risotto";
+            this.rbMeal4.Text = "..........";
             this.rbMeal4.UseVisualStyleBackColor = true;
+            this.rbMeal4.CheckedChanged += new System.EventHandler(this.rbMeal4_CheckedChanged);
             // 
             // rbMeal3
             // 
             this.rbMeal3.AutoSize = true;
-            this.rbMeal3.Location = new System.Drawing.Point(20, 145);
+            this.rbMeal3.Location = new System.Drawing.Point(18, 185);
             this.rbMeal3.Name = "rbMeal3";
-            this.rbMeal3.Size = new System.Drawing.Size(251, 24);
+            this.rbMeal3.Size = new System.Drawing.Size(74, 24);
             this.rbMeal3.TabIndex = 6;
             this.rbMeal3.TabStop = true;
-            this.rbMeal3.Text = "Beer-Brined Beer Can Chicken";
+            this.rbMeal3.Text = "..........";
             this.rbMeal3.UseVisualStyleBackColor = true;
+            this.rbMeal3.CheckedChanged += new System.EventHandler(this.rbMeal3_CheckedChanged);
             // 
             // rbMeal2
             // 
             this.rbMeal2.AutoSize = true;
-            this.rbMeal2.Location = new System.Drawing.Point(20, 97);
+            this.rbMeal2.Location = new System.Drawing.Point(18, 137);
             this.rbMeal2.Name = "rbMeal2";
-            this.rbMeal2.Size = new System.Drawing.Size(331, 24);
+            this.rbMeal2.Size = new System.Drawing.Size(74, 24);
             this.rbMeal2.TabIndex = 5;
             this.rbMeal2.TabStop = true;
-            this.rbMeal2.Text = "Tomatoes, Burrata and Broad Bean Salad";
+            this.rbMeal2.Text = "..........";
             this.rbMeal2.UseVisualStyleBackColor = true;
+            this.rbMeal2.CheckedChanged += new System.EventHandler(this.rbMeal2_CheckedChanged);
             // 
             // rbMeal1
             // 
             this.rbMeal1.AutoSize = true;
-            this.rbMeal1.Location = new System.Drawing.Point(20, 51);
+            this.rbMeal1.Location = new System.Drawing.Point(18, 91);
             this.rbMeal1.Name = "rbMeal1";
-            this.rbMeal1.Size = new System.Drawing.Size(119, 24);
+            this.rbMeal1.Size = new System.Drawing.Size(74, 24);
             this.rbMeal1.TabIndex = 4;
             this.rbMeal1.TabStop = true;
-            this.rbMeal1.Text = "Potted Crab";
+            this.rbMeal1.Text = "..........";
             this.rbMeal1.UseVisualStyleBackColor = true;
+            this.rbMeal1.CheckedChanged += new System.EventHandler(this.rbMeal1_CheckedChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(127, 121);
+            this.label1.Location = new System.Drawing.Point(110, 189);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(560, 25);
             this.label1.TabIndex = 2;
@@ -203,12 +227,13 @@ namespace Restaurant
             // 
             this.btnPlaceOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnPlaceOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaceOrder.Location = new System.Drawing.Point(68, 514);
+            this.btnPlaceOrder.Location = new System.Drawing.Point(64, 587);
             this.btnPlaceOrder.Name = "btnPlaceOrder";
             this.btnPlaceOrder.Size = new System.Drawing.Size(680, 52);
             this.btnPlaceOrder.TabIndex = 3;
             this.btnPlaceOrder.Text = "Place your order";
             this.btnPlaceOrder.UseVisualStyleBackColor = false;
+            this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click);
             // 
             // groupBox3
             // 
@@ -224,12 +249,21 @@ namespace Restaurant
             this.groupBox3.Controls.Add(this.lbClientOrder3);
             this.groupBox3.Controls.Add(this.lbClientOrder4);
             this.groupBox3.Controls.Add(this.lbClientOrder1);
-            this.groupBox3.Location = new System.Drawing.Point(68, 604);
+            this.groupBox3.Location = new System.Drawing.Point(64, 677);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(680, 275);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Orderlist ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(527, 189);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(135, 20);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "_____________+";
             // 
             // lbTotalPrice
             // 
@@ -335,31 +369,43 @@ namespace Restaurant
     " then you may order your next meal. \r\n";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(527, 189);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 20);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "_____________+";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(68, 907);
+            this.button1.Location = new System.Drawing.Point(64, 980);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(680, 54);
             this.button1.TabIndex = 6;
             this.button1.Text = "Make order final ";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // btnAddName
+            // 
+            this.btnAddName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnAddName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnAddName.Location = new System.Drawing.Point(428, 122);
+            this.btnAddName.Name = "btnAddName";
+            this.btnAddName.Size = new System.Drawing.Size(190, 48);
+            this.btnAddName.TabIndex = 7;
+            this.btnAddName.Text = "Add your name";
+            this.btnAddName.UseVisualStyleBackColor = false;
+            this.btnAddName.Click += new System.EventHandler(this.btnAddName_Click);
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(128, 135);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(271, 26);
+            this.tbName.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 1008);
+            this.ClientSize = new System.Drawing.Size(781, 1088);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.btnAddName);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox3);
@@ -409,6 +455,9 @@ namespace Restaurant
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddName;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.Button btnShowMealInfo;
     }
 }
 
