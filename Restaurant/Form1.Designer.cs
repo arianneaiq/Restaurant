@@ -59,6 +59,7 @@ namespace Restaurant
             this.btnMakeOrderFinal = new System.Windows.Forms.Button();
             this.btnAddName = new System.Windows.Forms.Button();
             this.tbName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -75,7 +76,7 @@ namespace Restaurant
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(126, 216);
+            this.groupBox1.Size = new System.Drawing.Size(308, 106);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Person Information";
@@ -83,26 +84,26 @@ namespace Restaurant
             // rbPerson4
             // 
             this.rbPerson4.AutoSize = true;
-            this.rbPerson4.Location = new System.Drawing.Point(12, 126);
+            this.rbPerson4.Location = new System.Drawing.Point(144, 65);
             this.rbPerson4.Margin = new System.Windows.Forms.Padding(2);
             this.rbPerson4.Name = "rbPerson4";
-            this.rbPerson4.Size = new System.Drawing.Size(46, 17);
+            this.rbPerson4.Size = new System.Drawing.Size(60, 17);
             this.rbPerson4.TabIndex = 3;
             this.rbPerson4.TabStop = true;
-            this.rbPerson4.Text = "Sam";
+            this.rbPerson4.Text = "Client 4";
             this.rbPerson4.UseVisualStyleBackColor = true;
             this.rbPerson4.CheckedChanged += new System.EventHandler(this.rbPerson4_CheckedChanged);
             // 
             // rbPerson3
             // 
             this.rbPerson3.AutoSize = true;
-            this.rbPerson3.Location = new System.Drawing.Point(12, 94);
+            this.rbPerson3.Location = new System.Drawing.Point(144, 33);
             this.rbPerson3.Margin = new System.Windows.Forms.Padding(2);
             this.rbPerson3.Name = "rbPerson3";
-            this.rbPerson3.Size = new System.Drawing.Size(45, 17);
+            this.rbPerson3.Size = new System.Drawing.Size(60, 17);
             this.rbPerson3.TabIndex = 2;
             this.rbPerson3.TabStop = true;
-            this.rbPerson3.Text = "Lars";
+            this.rbPerson3.Text = "Client 3";
             this.rbPerson3.UseVisualStyleBackColor = true;
             this.rbPerson3.CheckedChanged += new System.EventHandler(this.rbPerson3_CheckedChanged);
             // 
@@ -112,10 +113,10 @@ namespace Restaurant
             this.rbPerson2.Location = new System.Drawing.Point(12, 63);
             this.rbPerson2.Margin = new System.Windows.Forms.Padding(2);
             this.rbPerson2.Name = "rbPerson2";
-            this.rbPerson2.Size = new System.Drawing.Size(54, 17);
+            this.rbPerson2.Size = new System.Drawing.Size(60, 17);
             this.rbPerson2.TabIndex = 1;
             this.rbPerson2.TabStop = true;
-            this.rbPerson2.Text = "Myron";
+            this.rbPerson2.Text = "Client 2";
             this.rbPerson2.UseVisualStyleBackColor = true;
             this.rbPerson2.CheckedChanged += new System.EventHandler(this.rbPerson2_CheckedChanged);
             // 
@@ -125,27 +126,26 @@ namespace Restaurant
             this.rbPerson1.Location = new System.Drawing.Point(12, 33);
             this.rbPerson1.Margin = new System.Windows.Forms.Padding(2);
             this.rbPerson1.Name = "rbPerson1";
-            this.rbPerson1.Size = new System.Drawing.Size(40, 17);
+            this.rbPerson1.Size = new System.Drawing.Size(60, 17);
             this.rbPerson1.TabIndex = 0;
             this.rbPerson1.TabStop = true;
-            this.rbPerson1.Text = "Jim";
+            this.rbPerson1.Text = "Client 1";
             this.rbPerson1.UseVisualStyleBackColor = true;
             this.rbPerson1.CheckedChanged += new System.EventHandler(this.rbPerson1_CheckedChanged);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.groupBox2.Controls.Add(this.btnShowMealInfo);
             this.groupBox2.Controls.Add(this.rbMeal5);
             this.groupBox2.Controls.Add(this.rbMeal4);
             this.groupBox2.Controls.Add(this.rbMeal3);
             this.groupBox2.Controls.Add(this.rbMeal2);
             this.groupBox2.Controls.Add(this.rbMeal1);
-            this.groupBox2.Location = new System.Drawing.Point(179, 152);
+            this.groupBox2.Location = new System.Drawing.Point(43, 299);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(317, 216);
+            this.groupBox2.Size = new System.Drawing.Size(308, 199);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Meal Information";
@@ -153,10 +153,10 @@ namespace Restaurant
             // btnShowMealInfo
             // 
             this.btnShowMealInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnShowMealInfo.Location = new System.Drawing.Point(12, 25);
+            this.btnShowMealInfo.Location = new System.Drawing.Point(380, 355);
             this.btnShowMealInfo.Margin = new System.Windows.Forms.Padding(2);
             this.btnShowMealInfo.Name = "btnShowMealInfo";
-            this.btnShowMealInfo.Size = new System.Drawing.Size(116, 19);
+            this.btnShowMealInfo.Size = new System.Drawing.Size(116, 45);
             this.btnShowMealInfo.TabIndex = 9;
             this.btnShowMealInfo.Text = "Show Meal Info";
             this.btnShowMealInfo.UseVisualStyleBackColor = false;
@@ -165,7 +165,7 @@ namespace Restaurant
             // rbMeal5
             // 
             this.rbMeal5.AutoSize = true;
-            this.rbMeal5.Location = new System.Drawing.Point(12, 183);
+            this.rbMeal5.Location = new System.Drawing.Point(12, 159);
             this.rbMeal5.Margin = new System.Windows.Forms.Padding(2);
             this.rbMeal5.Name = "rbMeal5";
             this.rbMeal5.Size = new System.Drawing.Size(55, 17);
@@ -178,7 +178,7 @@ namespace Restaurant
             // rbMeal4
             // 
             this.rbMeal4.AutoSize = true;
-            this.rbMeal4.Location = new System.Drawing.Point(12, 152);
+            this.rbMeal4.Location = new System.Drawing.Point(12, 128);
             this.rbMeal4.Margin = new System.Windows.Forms.Padding(2);
             this.rbMeal4.Name = "rbMeal4";
             this.rbMeal4.Size = new System.Drawing.Size(55, 17);
@@ -191,7 +191,7 @@ namespace Restaurant
             // rbMeal3
             // 
             this.rbMeal3.AutoSize = true;
-            this.rbMeal3.Location = new System.Drawing.Point(12, 120);
+            this.rbMeal3.Location = new System.Drawing.Point(12, 96);
             this.rbMeal3.Margin = new System.Windows.Forms.Padding(2);
             this.rbMeal3.Name = "rbMeal3";
             this.rbMeal3.Size = new System.Drawing.Size(55, 17);
@@ -204,7 +204,7 @@ namespace Restaurant
             // rbMeal2
             // 
             this.rbMeal2.AutoSize = true;
-            this.rbMeal2.Location = new System.Drawing.Point(12, 89);
+            this.rbMeal2.Location = new System.Drawing.Point(12, 65);
             this.rbMeal2.Margin = new System.Windows.Forms.Padding(2);
             this.rbMeal2.Name = "rbMeal2";
             this.rbMeal2.Size = new System.Drawing.Size(55, 17);
@@ -217,7 +217,7 @@ namespace Restaurant
             // rbMeal1
             // 
             this.rbMeal1.AutoSize = true;
-            this.rbMeal1.Location = new System.Drawing.Point(12, 59);
+            this.rbMeal1.Location = new System.Drawing.Point(12, 35);
             this.rbMeal1.Margin = new System.Windows.Forms.Padding(2);
             this.rbMeal1.Name = "rbMeal1";
             this.rbMeal1.Size = new System.Drawing.Size(55, 17);
@@ -231,7 +231,7 @@ namespace Restaurant
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(73, 123);
+            this.label1.Location = new System.Drawing.Point(52, 271);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(409, 17);
@@ -242,7 +242,7 @@ namespace Restaurant
             // 
             this.btnPlaceOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnPlaceOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlaceOrder.Location = new System.Drawing.Point(43, 382);
+            this.btnPlaceOrder.Location = new System.Drawing.Point(43, 517);
             this.btnPlaceOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlaceOrder.Name = "btnPlaceOrder";
             this.btnPlaceOrder.Size = new System.Drawing.Size(453, 34);
@@ -265,7 +265,7 @@ namespace Restaurant
             this.groupBox3.Controls.Add(this.lbClientOrder3);
             this.groupBox3.Controls.Add(this.lbClientOrder4);
             this.groupBox3.Controls.Add(this.lbClientOrder1);
-            this.groupBox3.Location = new System.Drawing.Point(43, 440);
+            this.groupBox3.Location = new System.Drawing.Point(43, 575);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -403,7 +403,7 @@ namespace Restaurant
             // 
             this.btnMakeOrderFinal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnMakeOrderFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMakeOrderFinal.Location = new System.Drawing.Point(43, 637);
+            this.btnMakeOrderFinal.Location = new System.Drawing.Point(43, 772);
             this.btnMakeOrderFinal.Margin = new System.Windows.Forms.Padding(2);
             this.btnMakeOrderFinal.Name = "btnMakeOrderFinal";
             this.btnMakeOrderFinal.Size = new System.Drawing.Size(453, 35);
@@ -416,7 +416,7 @@ namespace Restaurant
             // 
             this.btnAddName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnAddName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnAddName.Location = new System.Drawing.Point(286, 82);
+            this.btnAddName.Location = new System.Drawing.Point(369, 210);
             this.btnAddName.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddName.Name = "btnAddName";
             this.btnAddName.Size = new System.Drawing.Size(127, 31);
@@ -427,17 +427,31 @@ namespace Restaurant
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(85, 88);
+            this.tbName.Location = new System.Drawing.Point(369, 173);
             this.tbName.Margin = new System.Windows.Forms.Padding(2);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(182, 20);
+            this.tbName.Size = new System.Drawing.Size(127, 20);
             this.tbName.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label4.Location = new System.Drawing.Point(55, 106);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(430, 34);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Select a radiobutton in the person information and type your name \r\nin the textbo" +
+    "x to register your name. ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 707);
+            this.ClientSize = new System.Drawing.Size(527, 851);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnShowMealInfo);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.btnAddName);
             this.Controls.Add(this.btnMakeOrderFinal);
@@ -450,6 +464,7 @@ namespace Restaurant
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -493,6 +508,7 @@ namespace Restaurant
         private System.Windows.Forms.Button btnAddName;
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Button btnShowMealInfo;
+        private System.Windows.Forms.Label label4;
     }
 }
 

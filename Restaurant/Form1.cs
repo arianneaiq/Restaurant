@@ -35,28 +35,31 @@ namespace Restaurant
             selectedMeal = new Meal();
         }
 
-        /* bool buttonPressed = false;
-         private void btnAddName_Click(object sender, System.EventArgs e)
-         {
-             if (!buttonPressed)
-             {
-                 int i = 0;
-                 while (i < 4)
-                 { person1.Setname(tbName.Text);
-                   rbPerson1.Text = person1.getName();
-
-                 }
-
-           buttonPressed = true;
-             } else 
-             {
-                 tbName.Text = "";
-             }
-        */
-
         private void btnAddName_Click(object sender, System.EventArgs e)
-        { 
+        {
+
+            if (rbPerson1.Checked)
+            {
+                person1.Setname(tbName.Text);
+                rbPerson1.Text = person1.getName();
+            }
+            else if (rbPerson2.Checked)
+            {
+                person2.Setname(tbName.Text);
+                rbPerson2.Text = person2.getName();
+            }
+            else if (rbPerson3.Checked)
+            {
+                person3.Setname(tbName.Text);
+                rbPerson3.Text = person3.getName();
+            }
+            else if (rbPerson4.Checked)
+            {
+                person4.Setname(tbName.Text);
+                rbPerson4.Text = person4.getName();
+            }
         }
+
 
         private void btnShowMealInfo_Click(object sender, System.EventArgs e)
         {
@@ -113,6 +116,7 @@ namespace Restaurant
             selectedMeal = meal5;
         }
 
+       
 
         private void btnPlaceOrder_Click(object sender, System.EventArgs e)
         {
@@ -150,6 +154,11 @@ namespace Restaurant
             lbTotalPrice.Text = "Euro " + totalprice.ToString();
 
             btnPlaceOrder.Enabled = false;
+        }
+
+        private void Form1_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }
